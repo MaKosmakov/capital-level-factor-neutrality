@@ -1,0 +1,10 @@
+strategy_id,metric,avg_delta,win_rate,ci_excludes_zero,n
+defensive_momentum_nc,Sharpe,0.22367983427153018,0.8693333333333334,2,6
+defensive_momentum_nc,Turnover,-0.6894630444844422,1.0,6,6
+defensive_momentum_nc,Max drawdown,0.17254043410224165,0.9973333333333333,6,6
+ensemble_continuous_nc,Sharpe,0.26842035513364265,0.8613333333333334,3,6
+ensemble_continuous_nc,Turnover,-0.5236455685366329,1.0,6,6
+ensemble_continuous_nc,Max drawdown,0.1390200464936299,0.9266666666666667,1,6
+reversal_continuous_nc,Sharpe,0.35921866843884614,0.7373333333333333,2,6
+reversal_continuous_nc,Turnover,-0.20325047962720835,0.9380000000000001,4,6
+reversal_continuous_nc,Max drawdown,0.12381436497952396,0.8116666666666669,1,6

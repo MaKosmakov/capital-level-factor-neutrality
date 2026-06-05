@@ -1,0 +1,5 @@
+experiment,pass,total
+Order sweep exact neutrality,24,24
+Order sweep useful criterion,21,24
+Signal sweep beats residualisation,32,36
+Exposure-stress robustness,96,96

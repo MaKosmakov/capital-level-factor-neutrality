@@ -6,5 +6,9 @@
 *.out
 *.synctex.gz
 
+# Local Python environments
+.venv/
+__pycache__/
+
 # macOS metadata
 .DS_Store

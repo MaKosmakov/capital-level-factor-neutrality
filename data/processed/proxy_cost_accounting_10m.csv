@@ -1,0 +1,10 @@
+universe,strategy_label,microstructure_coverage,avg_adv_usage,pct_trades_over_adv_cap,avg_realistic_cost_bps_per_rebalance,status
+Country,Reversal continuous,1.0,0.0100096298414661,0.1075949367088607,46.42537833691727,ok
+Country,Defensive momentum,1.0,0.0029791688048335,0.0186440677966101,16.58323751324792,ok
+Country,Ensemble continuous,1.0,0.0061576399507155,0.0584745762711864,37.76606907951951,ok
+GlobalCountries,Reversal continuous,0.5625,0.0073493887850497,0.0688052068805206,32.05408626736992,partial_microstructure_coverage
+GlobalCountries,Defensive momentum,0.5625,0.0018867534224836,0.00371920037192,9.01110410919635,partial_microstructure_coverage
+GlobalCountries,Ensemble continuous,0.5625,0.0035212250745913,0.0241748024174802,16.127349624795222,partial_microstructure_coverage
+Style,Reversal continuous,0.7987068965517241,0.2489421797141565,0.2568807339449541,44.40303029073774,partial_microstructure_coverage
+Style,Defensive momentum,0.7919491525423729,0.093444776427052,0.160513643659711,12.901371320888762,partial_microstructure_coverage
+Style,Ensemble continuous,0.7969957081545065,0.2496798767859908,0.1976305869682283,27.12876637965846,partial_microstructure_coverage

@@ -1,0 +1,7 @@
+data_source,n_assets,expected_assets,asset_coverage_ratio,missing_assets,start,end,has_price_levels,has_return,has_volume,has_dollar_volume,has_spread_or_bidask,has_adv,has_point_in_time_constituents,has_corporate_action_audit,survivorship_free_certified,point_in_time_certified,corporate_actions_certified,usable_microstructure,production_data_pass,universe
+proxy_ohlcv_panel,10,10,1.0,,2005-02-25,2025-11-28,True,True,True,True,True,True,False,False,False,False,False,True,False,Country
+proxy_ohlcv_panel,10,10,1.0,,2005-02-25,2025-11-28,True,True,True,True,True,True,False,False,False,False,False,True,False,Style
+cleaned_levels,48,48,1.0,,2010-01-05,2025-12-03,True,True,False,False,False,False,False,False,False,False,False,False,False,US large-cap sample
+cleaned_levels,11,11,1.0,,2000-01-04,2025-12-11,True,True,False,False,False,False,False,False,False,False,False,False,False,Sector
+cleaned_levels,16,16,1.0,,2005-01-04,2025-12-11,True,True,False,False,False,False,False,False,False,False,False,False,False,GlobalCountries
+cleaned_levels,13,13,1.0,,2005-01-04,2025-12-11,True,True,False,False,False,False,False,False,False,False,False,False,False,USBonds
