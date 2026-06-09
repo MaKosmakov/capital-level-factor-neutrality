@@ -7,8 +7,7 @@ This repository accompanies the paper:
 Paper link: [to be added]
 
 It contains the small reference implementation, the processed support files, and
-the scripts used to reproduce the reported tables and figures. The paper itself
-is not stored here; this repo is for the code and replication data.
+the scripts used to reproduce the reported tables and figures. 
 
 ## What This Project Studies
 
