@@ -10,6 +10,24 @@ It contains the small reference implementation, the processed support files, and
 the scripts used to reproduce the reported tables and figures. The paper itself
 is not stored here; this repo is for the code and replication data.
 
+## What This Project Studies
+
+The paper looks at factor-neutral portfolio construction at the level of traded
+capital weights. A common workflow removes factor exposure from the alpha signal
+before optimisation. That can help interpret the signal, but later construction
+steps can still change the exposures of the portfolio that is actually traded.
+
+The implementation here uses neutral coordinates: at each rebalance, the chosen
+exposure matrix defines a neutral subspace, and the portfolio optimiser works
+inside that subspace. The project also includes a projected partial-rebalancing
+rule: before trading part way toward a new neutral target, the old holding is
+projected into the current neutral subspace.
+
+In the processed validation panels, the neutral-coordinate portfolios have
+exposure leakage at numerical precision. The projected partial variants reduce
+turnover relative to the full neutral target while staying in the monitored
+neutral subspace.
+
 ## Contents
 
 - `src/neutral_coordinates.py` — the neutral-coordinate
