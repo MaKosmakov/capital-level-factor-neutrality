@@ -1,3 +1,8 @@
+# Manuscript and TeX artifacts
+*.tex
+*.pdf
+!figures/*.pdf
+
 # LaTeX build products
 *.aux
 *.fls
@@ -12,3 +17,7 @@ __pycache__/
 
 # macOS metadata
 .DS_Store
+
+# Local-only manuscript copies
+capital_level_factor_neutrality*
+local_manuscript/

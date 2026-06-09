@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate processed support files against the manuscript claims."""
+"""Validate processed support files against the reported paper claims."""
 
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ def require(condition: bool, message: str) -> None:
 def scan_for_old_terms() -> None:
     scanned_paths = [
         ROOT / "README.md",
-        ROOT / "capital_level_factor_neutrality.tex",
+        DATA / "README.md",
         ROOT / "src" / "neutral_coordinates.py",
         ROOT / "scripts" / "regenerate_figures.py",
         *sorted(DATA.glob("*.csv")),
@@ -115,7 +115,7 @@ def main() -> None:
     validate_data_scope()
     validate_exposure_sensitivity()
     validate_cost_sensitivity()
-    print("Processed support files passed manuscript-alignment checks.")
+    print("Processed support files passed paper-alignment checks.")
 
 
 if __name__ == "__main__":

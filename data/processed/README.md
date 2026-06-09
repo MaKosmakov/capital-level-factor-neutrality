@@ -1,13 +1,13 @@
 # Processed Support Files
 
-This folder contains processed CSV files used to support the manuscript tables,
+This folder contains processed CSV files used to support the paper tables,
 figures, and appendix diagnostics.
 
 The files are table-level and figure-level replication outputs. They are not
 raw market data. Vendor-restricted or license-restricted source data are not
 redistributed in this repository.
 
-The strategy identifiers use the terminology of the manuscript:
+The strategy identifiers use the terminology of the paper:
 
 - `full_neutral_target`
 - `defensive_momentum_nc`
