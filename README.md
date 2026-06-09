@@ -47,3 +47,11 @@ The validation script checks that the processed files use the paper terminology,
 have no local path leakage, preserve numerical-level exposure leakage for
 neutral-coordinate candidates, and retain the reported structural diagnostic
 counts.
+
+## License
+
+The code and repository documentation are released under the MIT License. The
+processed support files are included for replication of the reported tables and
+figures. Vendor-restricted or license-restricted source data are not
+redistributed, and this repository does not grant rights to any underlying
+third-party source data.
