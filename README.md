@@ -38,8 +38,8 @@ neutral subspace.
   match the reported terminology and headline diagnostics.
 - `data/processed/*.csv` — processed inputs for the tables and figures.
 
-The CSV files are processed research outputs, not raw market data. Vendor- or
-licence-restricted source data are not redistributed.
+The CSV files are processed research outputs derived from public data sources,
+not raw source downloads.
 
 ## Reproduce the Checks
 
@@ -69,5 +69,6 @@ counts.
 
 The code and repository documentation are released under the MIT License. The
 processed support files are included so the reported tables and figures can be
-checked. Vendor- or licence-restricted source data are not redistributed, and
-this repository does not grant rights to any underlying third-party data.
+checked. Source data were obtained from public sources; this repository
+distributes the processed research outputs used for replication, not the
+underlying raw downloads.

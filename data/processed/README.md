@@ -3,9 +3,8 @@
 This folder contains processed CSV files used to support the paper tables,
 figures, and appendix diagnostics.
 
-The files are table-level and figure-level replication outputs. They are not
-raw market data. Vendor-restricted or license-restricted source data are not
-redistributed in this repository.
+The files are table-level and figure-level replication outputs derived from
+public data sources. They are not raw source downloads.
 
 The strategy identifiers use the terminology of the paper:
 
