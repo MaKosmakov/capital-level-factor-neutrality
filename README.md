@@ -1,37 +1,37 @@
 # Capital-Level Factor Neutrality with Projected Partial Rebalancing
 
-This repository contains replication materials for the paper:
+This repository accompanies the paper:
 
 **Capital-Level Factor Neutrality with Projected Partial Rebalancing**
 
 Paper link: [to be added]
 
-This repository contains the reference implementation, processed support files,
-and scripts used to reproduce the reported tables and figures from the processed
-research panels.
+It contains the small reference implementation, the processed support files, and
+the scripts used to reproduce the reported tables and figures. The paper itself
+is not stored here; this repo is for the code and replication data.
 
 ## Contents
 
-- `src/neutral_coordinates.py` — reference implementation of neutral-coordinate
+- `src/neutral_coordinates.py` — the neutral-coordinate
   construction and projected partial rebalancing.
-- `scripts/regenerate_figures.py` — regenerates the two reported figure PDFs
+- `scripts/regenerate_figures.py` — regenerates the two figure PDFs
   from processed CSV files.
-- `scripts/validate_processed_results.py` — checks processed support files
-  against paper terminology and headline diagnostics.
-- `data/processed/*.csv` — processed table and figure support files.
+- `scripts/validate_processed_results.py` — checks that the processed files
+  match the reported terminology and headline diagnostics.
+- `data/processed/*.csv` — processed inputs for the tables and figures.
 
-The processed CSV files are not raw market data. Vendor-restricted or
-license-restricted source data are not redistributed.
+The CSV files are processed research outputs, not raw market data. Vendor- or
+licence-restricted source data are not redistributed.
 
-## Replication Checks
+## Reproduce the Checks
 
-Install the Python dependency set if needed:
+Install the Python dependencies if needed:
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-Validate the processed support files:
+Run the consistency checks:
 
 ```bash
 python3 scripts/validate_processed_results.py
@@ -43,15 +43,13 @@ Regenerate the figures:
 python3 scripts/regenerate_figures.py
 ```
 
-The validation script checks that the processed files use the paper terminology,
-have no local path leakage, preserve numerical-level exposure leakage for
-neutral-coordinate candidates, and retain the reported structural diagnostic
+The validation script checks for stale terminology, local path leakage,
+neutral-coordinate exposure leakage, and the reported structural diagnostic
 counts.
 
 ## License
 
 The code and repository documentation are released under the MIT License. The
-processed support files are included for replication of the reported tables and
-figures. Vendor-restricted or license-restricted source data are not
-redistributed, and this repository does not grant rights to any underlying
-third-party source data.
+processed support files are included so the reported tables and figures can be
+checked. Vendor- or licence-restricted source data are not redistributed, and
+this repository does not grant rights to any underlying third-party data.
