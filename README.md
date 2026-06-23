@@ -6,6 +6,8 @@ This repository accompanies the paper:
 
 Paper: [SSRN abstract 6902838](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6902838)
 
+Author-identified PDF: [capital_level_factor_neutrality_named.pdf](capital_level_factor_neutrality_named.pdf)
+
 It contains the small reference implementation, the processed support files, and
 the scripts used to reproduce the reported tables and figures. 
 
