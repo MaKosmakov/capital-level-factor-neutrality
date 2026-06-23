@@ -35,8 +35,8 @@ neutral subspace.
   construction and projected partial rebalancing.
 - `scripts/regenerate_figures.py` — regenerates the two figure PDFs
   from processed CSV files.
-- `scripts/validate_processed_results.py` — checks that the processed files
-  match the reported terminology and headline diagnostics.
+- `scripts/validate_processed_results.py` — checks the processed files against
+  the headline exposure, turnover, and structural diagnostics reported in the paper.
 - `data/processed/*.csv` — processed inputs for the tables and figures.
 
 The CSV files are processed research outputs derived from public data sources,
@@ -62,9 +62,9 @@ Regenerate the figures:
 python3 scripts/regenerate_figures.py
 ```
 
-The validation script checks for stale terminology, local path leakage,
-neutral-coordinate exposure leakage, and the reported structural diagnostic
-counts.
+The validation script checks the processed aggregate tables, exposure leakage,
+structural diagnostic counts, exposure-sensitivity rows, and cost-sensitivity
+rows.
 
 ## License
 
