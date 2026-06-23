@@ -4,7 +4,7 @@ This repository accompanies the paper:
 
 **Capital-Level Factor Neutrality with Projected Partial Rebalancing**
 
-Paper link: [to be added]
+Paper: [SSRN abstract 6902838](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6902838)
 
 It contains the small reference implementation, the processed support files, and
 the scripts used to reproduce the reported tables and figures. 
