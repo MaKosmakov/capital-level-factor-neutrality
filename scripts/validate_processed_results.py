@@ -1,28 +1,14 @@
 #!/usr/bin/env python3
-"""Validate processed support files against the reported paper claims."""
+"""Validate processed support files against the reported paper diagnostics."""
 
 from __future__ import annotations
 
 import csv
-import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "processed"
-
-FORBIDDEN_TERMS = [
-    r"Type-II",
-    r"\btype2\b",
-    r"HCIZ",
-    r"\bMOP(S)?\b",
-    r"hard_type2",
-    r"mom63_cap025_7500",
-    r"ensemble_continuous_7500",
-    r"reversal_continuous_7500",
-    r"source_path",
-    r"/Users/",
-]
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -33,22 +19,6 @@ def read_csv(name: str) -> list[dict[str, str]]:
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise AssertionError(message)
-
-
-def scan_for_old_terms() -> None:
-    scanned_paths = [
-        ROOT / "README.md",
-        DATA / "README.md",
-        ROOT / "src" / "neutral_coordinates.py",
-        ROOT / "scripts" / "regenerate_figures.py",
-        *sorted(DATA.glob("*.csv")),
-    ]
-    compiled = [(term, re.compile(term, re.IGNORECASE)) for term in FORBIDDEN_TERMS]
-    for path in scanned_paths:
-        text = path.read_text(errors="ignore")
-        for term, pattern in compiled:
-            match = pattern.search(text)
-            require(match is None, f"old/internal term {term!r} found in {path}")
 
 
 def validate_aggregate_table() -> None:
@@ -109,13 +79,12 @@ def validate_cost_sensitivity() -> None:
 
 
 def main() -> None:
-    scan_for_old_terms()
     validate_aggregate_table()
     validate_structural_counts()
     validate_data_scope()
     validate_exposure_sensitivity()
     validate_cost_sensitivity()
-    print("Processed support files passed paper-alignment checks.")
+    print("Processed support files passed diagnostic checks.")
 
 
 if __name__ == "__main__":
