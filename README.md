@@ -33,6 +33,8 @@ neutral subspace.
 
 - `src/neutral_coordinates.py` — the neutral-coordinate
   construction and projected partial rebalancing.
+- `INTERVIEW_SUMMARY.md` — short talking points on the initial idea,
+  what was tried, what failed, and what worked.
 - `scripts/regenerate_figures.py` — regenerates the two figure PDFs
   from processed CSV files.
 - `scripts/validate_processed_results.py` — checks the processed files against
